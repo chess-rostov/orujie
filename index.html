@@ -17,7 +17,7 @@
 <script>
     var colorNewCircle = 'black';
     var flagAudio = false;
-    var flagCvet = true;
+    /*var flagCvet = true;*/
     var flagRun = true;
     var flagWords = false;
     let namefilewav = '';
@@ -46,6 +46,7 @@
         }
     }
     
+    /*
     function myCvet(){
         if(checkboxCvet.checked){
             flagCvet = true;
@@ -55,6 +56,7 @@
             console.log("checkboxCvet false");
         }
     }
+    */
     
     function stopClick() {
         console.log("stopClick()");
@@ -84,6 +86,7 @@
         }
     }
     
+    /*
     function colorClick(in_cvet){
         console.log("colorClick = " + in_cvet);
         myCvet();
@@ -93,6 +96,7 @@
             colorNewCircle = 'black';
         }
     }
+    */
     
     function soundClick(namefilewav) {
         var audio = new Audio(); // Создаём новый элемент Audio
@@ -129,7 +133,7 @@
     let grafik = '';
     /*let flagRun = true;*/
     let div = '';
-    let color = colorNewCircle;
+    /*let color = colorNewCircle;*/
     if(flagRun){
         while (true){
             if(flagRun){
@@ -145,37 +149,37 @@
                     if((y > 0) & (y <= 71)){
                         //if(flagCvet)
                         //  color = getColor('red');
-                        colorClick('red');
+                        /*colorClick('red');*/
                         soundClick('oruj1.mp3');
                     }
                     if((y > 71) & (y <= 142)){
                         //color = getColor('orange');
-                        colorClick('orange');
+                        /*colorClick('orange');*/
                         soundClick('oruj2.mp3')
                     }
                     if((y > 142) & (y <=  213)){
                         //color = getColor('yellow');
-                        colorClick('yellow');
+                        /*colorClick('yellow');*/
                         soundClick('oruj3.mp3')
                     }
                     if((y > 213) & (y <= 284)){
                         //color = getColor('green');
-                        colorClick('green');
+                        /*colorClick('green');*/
                         soundClick('oruj4.mp3')
                     }
                     if((y > 284) & (y <= 355)){
                         //color = getColor('blue');
-                        colorClick('blue');
+                        /*colorClick('blue');*/
                         soundClick('oruj5.mp3')
                     }
                     if((y > 355) & (y <= 426)){
                         //color = getColor('indigo');
-                        colorClick('indigo');
+                        /*colorClick('indigo');*/
                         soundClick('oruj6.mp3')
                     }
                     if((y > 426) & (y <= 500)){
                         //color = getColor('violet');
-                        colorClick('violet');
+                        /*colorClick('violet');*/
                         soundClick('oruj7.mp3')
                     }
                     grafik = document.querySelector('#grafik');
@@ -195,7 +199,7 @@
                     div.style.width = '10px';
                     div.style.height = '10px';
                     div.style.position = 'absolute';
-                    div.style.background = getColor(colorNewCircle);
+                    /*div.style.background = getColor(colorNewCircle);*/
                     div.style.top = y;
                     div.style.left = x;
                     div.style.value = currentWord;
