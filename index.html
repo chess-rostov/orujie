@@ -140,10 +140,12 @@
                 await sleep(timerValue);
                 i++;
                 
-                x = i*20;
+                /*x = i*20;*/
+                x = getRandomInt(1100);
                 if (x < 1100){
                     
-                    y = getRandomInt(460) + Number(40);
+                    /*y = getRandomInt(460) + Number(40);*/
+                    y = getRandomInt(800);
                     console.log('y = ' + y);
                     console.log('x = ' + x);
                     if((y > 0) & (y <= 71)){
